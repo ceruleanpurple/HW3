@@ -47,8 +47,7 @@ export default class App extends React.Component {
       });
 
     });
-    console.debug("movie is", this.state.movie)
-    console.debug("movie name input is", this.state.movieNameInput)
+    this.setState({movieNameInput: null})
   }
   render() {
     return (
@@ -68,7 +67,7 @@ export default class App extends React.Component {
 
       </View>
     );
-    console.debug(this.state.movie);
+
   }
 }
 
