@@ -40,7 +40,7 @@ export default class App extends React.Component {
     let url = "http://api.themoviedb.org/3/search/movie?query=" + this.state.movieNameInput
     url    += "&api_key=" + apiKey
     url    += "&language=en-US&page=1&include_adult=false"
-    console.debug(url)
+    
     fetch(url).then(response => response.json()).then(data => {
 
       this.setState({movie: data.results[0]
